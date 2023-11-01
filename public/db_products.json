@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "image": "https://m.media-amazon.com/images/I/51Ga5GuElyL._SX331_BO1,204,203,200_.jpg",
+    "category": "book",
+    "title": "Slow Horses",
+    "description": "Slow Horses is a novel written by British author Mick Herron, first published in 2010. It is the first book in the Slough House series, a gripping and darkly humorous espionage series. The book is a thrilling blend of espionage, crime, and satire, set in the world of British intelligence",
+    "price": 30
+  },
+  {
+    "id": 2,
+    "image": "https://m.media-amazon.com/images/P/1501171348.01._SCLZZZZZZZ_SX500_.jpg",
+    "category": "book",
+    "title": "The Last Thing He Told Me: A Novel",
+    "description": "The Last Thing He Told Me: A Novel is a gripping and emotionally charged thriller written by Laura Dave, published in 2021. The story is centered around the character of Hannah Hall, a woman who seems to have found happiness with her seemingly perfect husband, Owen Michaels, and her stepdaughter, Bailey. However, their idyllic life is shattered when Owen disappears without a trace, leaving behind a mysterious note that simply reads Protect her.",
+    "price": 14
+  },
+  {
+    "id": 3,
+    "image": "https://m.media-amazon.com/images/I/51InjRPaF7L._SX377_BO1,204,203,200_.jpg",
+    "category": "book",
+    "title": "Modern Novel",
+    "description": "In Echoes of Tomorrow, a captivating modern novel by the enigmatic author A. J. Sutherland, readers are transported to a not-so-distant future where technology and humanity clash in a mesmerizing dance of hope and despair.",
+    "price": 17
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/JcRZLqf/airmax270-1.jpg",
+    "category": "shoe",
+    "title": "Nike Air Max",
+    "description": "Nike Air Max is a highly popular and iconic line of athletic footwear known for its distinctive design and innovative technology. Here's a description of Nike Air Max",
+    "price": 78
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co/LpkGcGy/airmax270-2.webp",
+    "category": "shoe",
+    "title": "Nike Air Force 1",
+    "description": "Nike Air Force 1, often referred to as simply Air Force 1 or AF1, is a legendary and enduring sneaker model that has left an indelible mark on sneaker culture and fashion",
+    "price": 56
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co/QHJ75Dq/airmax270-3.webp",
+    "category": "shoe",
+    "title": "Nike Air Jordan",
+    "description": "Nike Air Jordan, or Air Jordan for short, is a renowned collection of athletic footwear designed in partnership with basketball icon Michael Jordan.",
+    "price": 35
+  },
+  {
+    "id": 7,
+    "image": "https://i.ibb.co/QjgnGYf/levis501-1.jpg",
+    "category": "cloth",
+    "title": "levis model 1",
+    "description": "Nike Air Jordan, or Air Jordan for short, is a renowned collection of athletic footwear designed in partnership with basketball icon Michael Jordan.",
+    "price": 35
+  },
+  {
+    "id": 8,
+    "image": "https://i.ibb.co/ZBH17v7/levis501-2.webp",
+    "category": "cloth",
+    "title": "levis model 2",
+    "description": "Nike Air Jordan, or Air Jordan for short, is a renowned collection of athletic footwear designed in partnership with basketball icon Michael Jordan.",
+    "price": 35
+  },
+  {
+    "id": 9,
+    "image": "https://i.ibb.co/nBWVd8x/levis501-3.jpg",
+    "category": "cloth",
+    "title": "levis model 3",
+    "description": "Nike Air Jordan, or Air Jordan for short, is a renowned collection of athletic footwear designed in partnership with basketball icon Michael Jordan.",
+    "price": 35
+  }
+]
