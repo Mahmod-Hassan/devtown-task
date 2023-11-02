@@ -49,7 +49,7 @@
   },
   {
     "id": 7,
-    "image": "https://i.ibb.co/QjgnGYf/levis501-1.jpg",
+    "image": "https://i.ibb.co/ZBH17v7/levis501-2.webp",
     "category": "cloth",
     "title": "levis model 1",
     "description": "Nike Air Jordan, or Air Jordan for short, is a renowned collection of athletic footwear designed in partnership with basketball icon Michael Jordan.",
@@ -57,17 +57,9 @@
   },
   {
     "id": 8,
-    "image": "https://i.ibb.co/ZBH17v7/levis501-2.webp",
-    "category": "cloth",
-    "title": "levis model 2",
-    "description": "Nike Air Jordan, or Air Jordan for short, is a renowned collection of athletic footwear designed in partnership with basketball icon Michael Jordan.",
-    "price": 35
-  },
-  {
-    "id": 9,
     "image": "https://i.ibb.co/nBWVd8x/levis501-3.jpg",
     "category": "cloth",
-    "title": "levis model 3",
+    "title": "levis model 2",
     "description": "Nike Air Jordan, or Air Jordan for short, is a renowned collection of athletic footwear designed in partnership with basketball icon Michael Jordan.",
     "price": 35
   }
