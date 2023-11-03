@@ -19,6 +19,7 @@ const Pagination = ({setCurrentPage,currentPage}) => {
   };
 
     return(
+      // PaginationContainer is a styled component
         <PaginationContainer>
            <h3>Current Page : {currentPage}</h3>
            <div>

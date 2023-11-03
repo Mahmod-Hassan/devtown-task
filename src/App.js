@@ -7,10 +7,13 @@ import { GlobalStyle } from "./styles/Global.styles";
 
 
 function App() {
+  // Lifting state up
+  // so that I can pass props to immidiate child component
   const [category, setCategory] = useState('all');
   const [price, setPrice] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
   return (
+    // RootContainer GlobalStyle are styled component
     <RootContainer>
       <GlobalStyle />
        <Header category={category} price={price} setPrice={setPrice} setCategory={setCategory} />

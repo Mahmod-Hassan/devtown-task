@@ -27,7 +27,7 @@ export const CategoryContainer = styled.div`
 `
 export const ProductsContainer = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   margin: 5vh 0px;
   @media (max-width: 1023px) and (min-width: 768px) {
@@ -40,12 +40,25 @@ export const ProductsContainer = styled.div`
   }
 `
 export const ProductCardContainer = styled.div`
+  display: flex;
+  gap: 20px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   padding: 1em;
   border-radius: 10px;
   background-color: #ffffff;
+  & img {
+    width: 40%;
+    height: 250px;
+  }
+  @media (max-width: 1023px) and (min-width: 768px) {
+     flex-direction: column;
+     & img {
+      width: 100%;
+     }
+  }
 `
 export const ProductDetails = styled.div`
+   width: 60%;
    font-size: 30px;
    & * {
      margin: 5px 0;
@@ -63,6 +76,16 @@ export const ProductDetails = styled.div`
    & p {
       font-size: 0.5em;
    }
+   & button {
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    padding: 10px 20px;
+    border: none;
+   }
+   @media (max-width: 1023px) and (min-width: 768px) {
+      width: 100%;
+    }
 `
 
 export const PaginationContainer = styled.div`

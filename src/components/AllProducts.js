@@ -4,6 +4,7 @@ import { ProductsContainer } from '../styles/Container.styles';
 import SingleProduct from './SingleProduct';
 
 const AllProducts = ({category, price, currentPage}) => {
+  // useFetchProducts is a hook that fetch products and return the data
     const {isLoading, products} = useFetchProducts();
 
     // filter product by category
@@ -38,9 +39,14 @@ const AllProducts = ({category, price, currentPage}) => {
         content = <h1>Loading...</h1>
     }
     else if(!isLoading && products.length > 0) {
+        // first time filter and sorted
         const filteredProducts = products
         .filter(filterByCategory)
         .sort(sortByPrice);
+        
+        // then slice the array based on condition
+        // when products will filter by default all category
+        // this condition will be execute
         if(filteredProducts.length === products.length) {
           content = filteredProducts
           .slice(startIndex, endIndex)
@@ -48,6 +54,8 @@ const AllProducts = ({category, price, currentPage}) => {
             <SingleProduct key={product.id} product={product} />
           ));
         }
+        // when shop, cloth or other category will filter
+        // then else condition will be execute
        else{
         content = filteredProducts
           .slice(0,4)
@@ -58,6 +66,7 @@ const AllProducts = ({category, price, currentPage}) => {
     }
 
     return (
+      // ProductsContainer is a styled component
         <ProductsContainer>
             {
                content

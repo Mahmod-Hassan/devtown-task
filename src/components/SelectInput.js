@@ -3,6 +3,7 @@ import { Select } from '../styles/Elements.styles';
 
 const SelectInput = ({ price, setPrice }) => {
   return (
+    // Select is a styled component
     <Select
       defaultValue={price}
       onChange={(e) => setPrice(e.target.value)}

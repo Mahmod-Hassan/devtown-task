@@ -18,10 +18,6 @@ export const StyledButton = styled.button`
       border: 1px solid rgb(148, 146, 146);
     }
 `
-export const Image = styled.img`
-   width: 100%;
-   height: 250px;
-`
 
 export const Category = styled.span`
    background-color: rgb(160, 226, 204);
