@@ -16,10 +16,11 @@ export const HeaderContainer = styled.div`
 `
 export const CategoryContainer = styled.div`
   display: flex;
-  gap: 20px;
+  flex-grow: 1;
+  gap: 5vw;
   & button {
+    padding: 10px 0;
     width: 10vw;
-    height: 7vh;
     font-size: 1rem;
     border-radius: 20px;
     &:hover {
@@ -31,6 +32,7 @@ export const CategoryContainer = styled.div`
   }
   @media (max-width: 767px) {
     justify-content: space-between;
+    width: 100%;
   }
 `
 export const ProductsContainer = styled.div`
