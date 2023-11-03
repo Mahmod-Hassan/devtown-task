@@ -5,13 +5,18 @@ export const RootContainer = styled.div`
 `
 export const HeaderContainer = styled.div`
   display: flex;
+  flex-direction: row;
   height: 4rem;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 767px) {
+    flex-direction: column;
+    gap: 10px;
+  }
 `
 export const CategoryContainer = styled.div`
   display: flex;
-  gap: 10px;
+  gap: 20px;
   & button {
     width: 10vw;
     height: 7vh;
@@ -23,6 +28,9 @@ export const CategoryContainer = styled.div`
       border: none;
       cursor: pointer;
     }
+  }
+  @media (max-width: 767px) {
+    justify-content: space-between;
   }
 `
 export const ProductsContainer = styled.div`

@@ -7,6 +7,9 @@ export const Select = styled.select`
     width: 20vw;
     height: 7vh;
     font-size: 1rem;
+    @media (max-width: 767px) {
+    width: 100%;
+  }
 `
 export const StyledButton = styled.button`
      &.active {
