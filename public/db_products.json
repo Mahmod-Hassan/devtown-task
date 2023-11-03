@@ -45,7 +45,7 @@
     "category": "shoe",
     "title": "Nike Air Jordan",
     "description": "Nike Air Jordan, or Air Jordan for short, is a renowned collection of athletic footwear designed in partnership with basketball icon Michael Jordan.",
-    "price": 35
+    "price": 66
   },
   {
     "id": 7,
@@ -61,6 +61,6 @@
     "category": "cloth",
     "title": "levis model 2",
     "description": "Nike Air Jordan, or Air Jordan for short, is a renowned collection of athletic footwear designed in partnership with basketball icon Michael Jordan.",
-    "price": 35
+    "price": 45
   }
 ]
