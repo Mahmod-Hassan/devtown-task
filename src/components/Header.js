@@ -1,20 +1,23 @@
 import React from 'react';
+import { CategoryContainer, HeaderContainer } from '../styles/Container.styles';
+import Button from './Button';
+import SelectInput from './SelectInput';
 
 const Header = ({category, setCategory,price, setPrice}) => {
+    const categories = ['all', 'cloth', 'shoe', 'book'];
     return(
-        <div className='header-container'>
-            <div className='category-container'>
-                <button className={`${category === 'all' ? 'active' : 'inactive'}`} onClick={() => setCategory('all')}>All</button>
-                <button className={`${category === 'cloth' ? 'active' : 'inactive'}`} onClick={() => setCategory('cloth')}>Cloth</button>
-                <button className={`${category === 'shoe' ? 'active' : 'inactive'}`} onClick={() => setCategory('shoe')}>Shoe</button>
-                <button className={`${category === 'book' ? 'active' : 'inactive'}`} onClick={() => setCategory('book')}>Book</button>
-            </div>
-            <select defaultValue={price} onChange={(e) => setPrice(e.target.value)} className='sort-input'>
-                <option value={0}>None</option>
-                <option value={1}>Price (Low to High)</option>
-                <option value={-1}>Price (High to Low)</option>
-            </select>
-        </div>
+        <HeaderContainer>
+            <CategoryContainer>
+            {categories.map((cat) => (
+                <Button
+                    key={cat}
+                    isActive={category === cat}
+                    onClick={() => setCategory(cat)}
+                >{cat}</Button>
+        ))}
+            </CategoryContainer>
+            <SelectInput price={price} setPrice={setPrice} />
+        </HeaderContainer>
     )
 }
 export default Header;

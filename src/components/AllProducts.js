@@ -1,5 +1,6 @@
 import React from 'react';
 import useFetchProducts from '../hooks/useFetchProducts';
+import { ProductsContainer } from '../styles/Container.styles';
 import SingleProduct from './SingleProduct';
 
 const AllProducts = ({category, price, currentPage}) => {
@@ -29,7 +30,6 @@ const AllProducts = ({category, price, currentPage}) => {
 
     const startIndex = (currentPage - 1) * productsPerPage;
     const endIndex = startIndex + productsPerPage;
-    console.log(startIndex,endIndex)
 
     // handle products and loading state
     // so that there is no error occured
@@ -57,37 +57,12 @@ const AllProducts = ({category, price, currentPage}) => {
        }
     }
 
-    return(
-        <div className='products-container'>
+    return (
+        <ProductsContainer>
             {
                content
             }
-        </div>
+        </ProductsContainer>
     )
 }
 export default AllProducts;
-
-  // {
-  //   "id": 9,
-  //   "image": "https://i.ibb.co/ZBH17v7/levis501-2.webp",
-  //   "category": "cloth",
-  //   "title": "levis model 1",
-  //   "description": "Nike Air Jordan, or Air Jordan for short, is a renowned collection of athletic footwear designed in partnership with basketball icon Michael Jordan.",
-  //   "price": 35
-  // },
-  // {
-  //   "id": 10,
-  //   "image": "https://i.ibb.co/nBWVd8x/levis501-3.jpg",
-  //   "category": "cloth",
-  //   "title": "levis model 2",
-  //   "description": "Nike Air Jordan, or Air Jordan for short, is a renowned collection of athletic footwear designed in partnership with basketball icon Michael Jordan.",
-  //   "price": 45
-  // },
-  // {
-  //   "id": 11,
-  //   "image": "https://i.ibb.co/nBWVd8x/levis501-3.jpg",
-  //   "category": "cloth",
-  //   "title": "levis model 2",
-  //   "description": "Nike Air Jordan, or Air Jordan for short, is a renowned collection of athletic footwear designed in partnership with basketball icon Michael Jordan.",
-  //   "price": 45
-  // }

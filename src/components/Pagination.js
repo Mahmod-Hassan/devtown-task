@@ -1,5 +1,6 @@
 import React from 'react';
 import useFetchProducts from '../hooks/useFetchProducts';
+import { PaginationContainer } from '../styles/Container.styles';
 
 const Pagination = ({setCurrentPage,currentPage}) => {
   // products comes from useFetchProducts hooks
@@ -18,17 +19,19 @@ const Pagination = ({setCurrentPage,currentPage}) => {
   };
 
     return(
-        <div className='pagination-container'>
+        <PaginationContainer>
            <h3>Current Page : {currentPage}</h3>
-           <div className='pagination-buttons'>
+           <div>
               {
-              pageNumbers.map(number => <button onClick={() => handlePageChange(number + 1)} key={number}>
+              pageNumbers.map(number => <button
+              className={`${currentPage === number+1 ? 'active' : 'inactive'}`}
+              onClick={() => handlePageChange(number + 1)} key={number}>
                   {number + 1}
                 </button>)
               } 
            </div>
           
-        </div>
+        </PaginationContainer>
     )
 }
 export default Pagination;
