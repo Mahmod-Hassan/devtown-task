@@ -12,13 +12,17 @@ function App() {
   const [category, setCategory] = useState('all');
   const [price, setPrice] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
+   // set the current page number by this handler
+   const handlePageChange = (page) => {
+    setCurrentPage(page);
+ };
   return (
     // RootContainer GlobalStyle are styled component
     <RootContainer>
       <GlobalStyle />
        <Header category={category} price={price} setPrice={setPrice} setCategory={setCategory} />
-       <AllProducts currentPage={currentPage} price={price} category={category} />
-       <Pagination currentPage={currentPage} setCurrentPage={setCurrentPage} />
+       <AllProducts handlePageChange={handlePageChange} currentPage={currentPage} price={price} category={category} />
+       <Pagination handlePageChange={handlePageChange} currentPage={currentPage} setCurrentPage={setCurrentPage} />
     </RootContainer>
   )
 }

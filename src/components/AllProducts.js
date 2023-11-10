@@ -3,7 +3,7 @@ import useFetchProducts from '../hooks/useFetchProducts';
 import { ProductsContainer } from '../styles/Container.styles';
 import SingleProduct from './SingleProduct';
 
-const AllProducts = ({category, price, currentPage}) => {
+const AllProducts = ({category, price, currentPage,handlePageChange}) => {
   // useFetchProducts is a hook that fetch products and return the data
     const {isLoading, products} = useFetchProducts();
 
@@ -50,6 +50,13 @@ const AllProducts = ({category, price, currentPage}) => {
         if(filteredProducts.length === products.length) {
           content = filteredProducts
           .slice(startIndex, endIndex)
+          .map((product) => (
+            <SingleProduct key={product.id} product={product} />
+          ));
+        }
+        else if(filteredProducts.length < 4){
+          handlePageChange(1)
+          content = filteredProducts
           .map((product) => (
             <SingleProduct key={product.id} product={product} />
           ));

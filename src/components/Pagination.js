@@ -2,7 +2,7 @@ import React from 'react';
 import useFetchProducts from '../hooks/useFetchProducts';
 import { PaginationContainer } from '../styles/Container.styles';
 
-const Pagination = ({setCurrentPage,currentPage}) => {
+const Pagination = ({setCurrentPage,currentPage, handlePageChange}) => {
   // products comes from useFetchProducts hooks
   const {products} = useFetchProducts();
 
@@ -13,11 +13,6 @@ const Pagination = ({setCurrentPage,currentPage}) => {
   // convert it into array 
   const pageNumbers = [...Array(totlaPage).keys()];
 
-  // set the current page number by this handler
-  const handlePageChange = (page) => {
-     setCurrentPage(page);
-  };
-
     return(
       // PaginationContainer is a styled component
         <PaginationContainer>
@@ -25,7 +20,7 @@ const Pagination = ({setCurrentPage,currentPage}) => {
            <div>
               {
               pageNumbers.map(number => <button
-              className={`${currentPage === number+1 ? 'active' : 'inactive'}`}
+              className={`${currentPage === number + 1 ? 'active' : 'inactive'}`}
               onClick={() => handlePageChange(number + 1)} key={number}>
                   {number + 1}
                 </button>)
